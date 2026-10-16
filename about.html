@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О сайте — Реестр</title>
+  <meta name="description" content="О проекте, источниках данных и составе списка.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <small>Оскар</small>
+        <strong>Реестр</strong>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="ledger.html">Счёт</a>
+        <a href="ceremony.html">Как считают</a>
+        <a href="quiz.html">Викторина</a>
+        <a href="about.html" class="active">О сайте</a>
+      </nav>
+      <div class="tools">
+        <a class="icon-btn" href="index.html#favorites" title="Избранное">♥ <span id="fav-count">0</span></a>
+        <button class="icon-btn" id="theme-btn" type="button" title="Сменить тему">☾</button>
+        <button class="icon-btn burger" id="burger" type="button" title="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap page">
+      <div class="about-grid">
+        <div>
+          <p class="label">О сайте</p>
+          <h1>Девять фильмов с рекордами «Оскара»</h1>
+          <p>Сайт собран как учебный проект. Это подборка фильмов, которые получили больше всего конкурсных «Оскаров». У каждой картины своя страница с рассказом, списком наград, актёрами, оценками и трейлером.</p>
+          <p>Награды и имена можно проверить в базе данных Американской киноакадемии (oscars.org). Оценки взяты с IMDb, Кинопоиска и Rotten Tomatoes на октябрь 2026 года. Трейлеры подключены с YouTube.</p>
+          <p>Картинки на страницах — иллюстрации к фильмам, а не кадры и не официальные постеры.</p>
+          <p>«Оскар» часто воспринимают как оценку качества. На самом деле это результат голосования киноиндустрии в конкретный год, и у фильмов-рекордсменов бывают как поклонники, так и критики.</p>
+
+          <h2>Что на сайте</h2>
+          <p>Главная со списком, поиском и фильтрами, страницы девяти фильмов, сводная таблица с сортировкой, страница с правилами подсчёта и викторина. Фильмы можно добавлять в избранное сердечком, а тему переключать между светлой и тёмной.</p>
+        </div>
+        <aside class="dark-box">
+          <p class="label">Состав списка</p>
+          <ul>
+            <li>3 фильма по 11</li>
+            <li>1 фильм по 10</li>
+            <li>3 фильма по 9</li>
+            <li>2 фильма по 8</li>
+          </ul>
+          <p>По числу побед рекорд пока остаётся на отметке 11: его держат «Бен-Гур», «Титаник» и «Возвращение короля».</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Реестр — фильмы с наибольшим числом «Оскаров».</p>
+      <p>Учебный проект · 2026</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" title="Наверх">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

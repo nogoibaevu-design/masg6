@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Реестр — фильмы-рекордсмены «Оскара»</title>
+  <meta name="description" content="Девять фильмов, получивших больше всего «Оскаров»: награды, актёры, трейлеры и оценки.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <small>Оскар</small>
+        <strong>Реестр</strong>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="ledger.html">Счёт</a>
+        <a href="ceremony.html">Как считают</a>
+        <a href="quiz.html">Викторина</a>
+        <a href="about.html">О сайте</a>
+      </nav>
+      <div class="tools">
+        <a class="icon-btn" href="index.html#favorites" title="Избранное">♥ <span id="fav-count">0</span></a>
+        <button class="icon-btn" id="theme-btn" type="button" title="Сменить тему">☾</button>
+        <button class="icon-btn burger" id="burger" type="button" title="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <p class="label">1939 — 2008</p>
+          <h1>Одиннадцать «Оскаров» — рекорд, который повторили трижды.</h1>
+          <p>«Бен-Гур», «Титаник» и «Возвращение короля» получили по 11 статуэток. Ниже — ещё шесть фильмов, взявших 10, 9 и 8. Это не рейтинг по качеству, а просто счёт наград.</p>
+        </div>
+        <a class="hero-film" href="ben-hur.html">
+          <img src="img/ben-hur.jpg" alt="Гонка на колесницах — сцена, ради которой построили отдельную арену.">
+          <strong>Бен-Гур</strong>
+          <span>1959 · 11 статуэток · Уильям Уайлер</span>
+        </a>
+      </section>
+
+      <div class="controls">
+        <input type="search" id="search" placeholder="Поиск по названию или режиссёру">
+        <div class="chips" id="chips">
+          <button class="chip on" type="button" data-filter="all">Все</button>
+          <button class="chip" type="button" data-filter="11">11</button>
+          <button class="chip" type="button" data-filter="10">10</button>
+          <button class="chip" type="button" data-filter="9">9</button>
+          <button class="chip" type="button" data-filter="8">8</button>
+          <button class="chip" type="button" data-filter="fav">♥ Избранное</button>
+        </div>
+      </div>
+
+      <ol class="film-list">
+      <li data-text="бен-гур ben-hur уильям уайлер 1959" data-wins="11" data-slug="ben-hur">
+        <a class="film-row" href="ben-hur.html">
+          <span class="film-num">01</span>
+          <img src="img/ben-hur.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Бен-Гур</span>
+            <span class="film-sub">Ben-Hur · 1959 · Уильям Уайлер</span>
+          </span>
+          <span class="film-wins">11</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="ben-hur" title="В избранное">♡</button>
+      </li>
+      <li data-text="титаник titanic джеймс кэмерон 1997" data-wins="11" data-slug="titanic">
+        <a class="film-row" href="titanic.html">
+          <span class="film-num">02</span>
+          <img src="img/titanic.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Титаник</span>
+            <span class="film-sub">Titanic · 1997 · Джеймс Кэмерон</span>
+          </span>
+          <span class="film-wins">11</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="titanic" title="В избранное">♡</button>
+      </li>
+      <li data-text="властелин колец: возвращение короля the lord of the rings: the return of the king питер джексон 2003" data-wins="11" data-slug="return-of-the-king">
+        <a class="film-row" href="return-of-the-king.html">
+          <span class="film-num">03</span>
+          <img src="img/return-of-the-king.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Властелин колец: Возвращение короля</span>
+            <span class="film-sub">The Lord of the Rings: The Return of the King · 2003 · Питер Джексон</span>
+          </span>
+          <span class="film-wins">11</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="return-of-the-king" title="В избранное">♡</button>
+      </li>
+      <li data-text="вестсайдская история west side story роберт уайз, джером роббинс 1961" data-wins="10" data-slug="west-side-story">
+        <a class="film-row" href="west-side-story.html">
+          <span class="film-num">04</span>
+          <img src="img/west-side-story.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Вестсайдская история</span>
+            <span class="film-sub">West Side Story · 1961 · Роберт Уайз, Джером Роббинс</span>
+          </span>
+          <span class="film-wins">10</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="west-side-story" title="В избранное">♡</button>
+      </li>
+      <li data-text="жижи gigi винсенте миннелли 1958" data-wins="9" data-slug="gigi">
+        <a class="film-row" href="gigi.html">
+          <span class="film-num">05</span>
+          <img src="img/gigi.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Жижи</span>
+            <span class="film-sub">Gigi · 1958 · Винсенте Миннелли</span>
+          </span>
+          <span class="film-wins">9</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="gigi" title="В избранное">♡</button>
+      </li>
+      <li data-text="последний император the last emperor бернардо бертолуччи 1987" data-wins="9" data-slug="last-emperor">
+        <a class="film-row" href="last-emperor.html">
+          <span class="film-num">06</span>
+          <img src="img/last-emperor.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Последний император</span>
+            <span class="film-sub">The Last Emperor · 1987 · Бернардо Бертолуччи</span>
+          </span>
+          <span class="film-wins">9</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="last-emperor" title="В избранное">♡</button>
+      </li>
+      <li data-text="английский пациент the english patient энтони мингелла 1996" data-wins="9" data-slug="english-patient">
+        <a class="film-row" href="english-patient.html">
+          <span class="film-num">07</span>
+          <img src="img/english-patient.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Английский пациент</span>
+            <span class="film-sub">The English Patient · 1996 · Энтони Мингелла</span>
+          </span>
+          <span class="film-wins">9</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="english-patient" title="В избранное">♡</button>
+      </li>
+      <li data-text="унесённые ветром gone with the wind виктор флеминг 1939" data-wins="8" data-slug="gone-with-the-wind">
+        <a class="film-row" href="gone-with-the-wind.html">
+          <span class="film-num">08</span>
+          <img src="img/gone-with-the-wind.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Унесённые ветром</span>
+            <span class="film-sub">Gone with the Wind · 1939 · Виктор Флеминг</span>
+          </span>
+          <span class="film-wins">8</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="gone-with-the-wind" title="В избранное">♡</button>
+      </li>
+      <li data-text="миллионер из трущоб slumdog millionaire дэнни бойл 2008" data-wins="8" data-slug="slumdog-millionaire">
+        <a class="film-row" href="slumdog-millionaire.html">
+          <span class="film-num">09</span>
+          <img src="img/slumdog-millionaire.jpg" alt="" loading="lazy">
+          <span>
+            <span class="film-name">Миллионер из трущоб</span>
+            <span class="film-sub">Slumdog Millionaire · 2008 · Дэнни Бойл</span>
+          </span>
+          <span class="film-wins">8</span>
+        </a>
+        <button class="fav-btn" type="button" data-slug="slumdog-millionaire" title="В избранное">♡</button>
+      </li>
+      </ol>
+      <p class="empty" id="empty">Ничего не нашлось.</p>
+
+      <p class="random-line"><button class="icon-btn" id="random-btn" type="button">🎲 Случайный фильм</button></p>
+
+      <section class="three">
+        <div>
+          <p class="label">Как читать</p>
+          <p>В списке только конкурсные награды. Две почётные статуэтки «Унесённых ветром» сюда не входят, поэтому у фильма стоит 8.</p>
+        </div>
+        <div>
+          <p class="label">Что внутри</p>
+          <p>На странице каждого фильма: краткий рассказ, список наград, актёры, оценки на трёх сайтах и трейлер.</p>
+        </div>
+        <div>
+          <p class="label">Что ещё есть</p>
+          <p>Сводная таблица с сортировкой, правила подсчёта наград и викторина на восемь вопросов.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Реестр — фильмы с наибольшим числом «Оскаров».</p>
+      <p>Учебный проект · 2026</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" title="Наверх">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

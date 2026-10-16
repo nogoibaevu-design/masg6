@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Викторина — Реестр</title>
+  <meta name="description" content="Восемь вопросов про фильмы-рекордсмены «Оскара».">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <small>Оскар</small>
+        <strong>Реестр</strong>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="ledger.html">Счёт</a>
+        <a href="ceremony.html">Как считают</a>
+        <a href="quiz.html" class="active">Викторина</a>
+        <a href="about.html">О сайте</a>
+      </nav>
+      <div class="tools">
+        <a class="icon-btn" href="index.html#favorites" title="Избранное">♥ <span id="fav-count">0</span></a>
+        <button class="icon-btn" id="theme-btn" type="button" title="Сменить тему">☾</button>
+        <button class="icon-btn burger" id="burger" type="button" title="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap page">
+      <p class="label">Проверьте себя</p>
+      <h1>Викторина</h1>
+      <p class="lead">Восемь вопросов по материалам сайта. Ответы подсвечиваются сразу.</p>
+
+      <div class="quiz-box" id="quiz">
+        <noscript>Для викторины нужен включённый JavaScript.</noscript>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Реестр — фильмы с наибольшим числом «Оскаров».</p>
+      <p>Учебный проект · 2026</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" title="Наверх">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
